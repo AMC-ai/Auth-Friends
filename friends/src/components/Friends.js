@@ -20,7 +20,7 @@ function Friends(props) {
     return (
 
         <>
-            <AddFriend />
+            {/* <AddFriend /> */}
             <h1>My Friends:</h1>
 
             {friends.map(friend => (

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import api from '../utils/api';
 
 
-function Friends(props) {
+function FriendsList(props) {
     const [error, setError] = useState()
     const [friends, setFriends] = useState([])
 
@@ -32,4 +32,4 @@ function Friends(props) {
 
     )
 }
-export default Friends;
+export default FriendsList;

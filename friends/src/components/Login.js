@@ -26,7 +26,7 @@ function Login(props) {
             .then(res => {
                 // console.log(res.data)
                 localStorage.setItem('payload', res.data.payload)
-                props.history.push('/myfriends')
+                props.history.push('/friendslist')
             })
             .catch(err => {
                 console.log(err)

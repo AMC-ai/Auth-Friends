@@ -14,7 +14,7 @@ function FriendsList(props) {
             .then(res => {
                 setFriends(res.data)
             })
-            .catch(err => {
+            .catch(error => {
                 console.log(error)
                 setError('Unable to authenticate user.')
             })

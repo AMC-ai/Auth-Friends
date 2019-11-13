@@ -20,7 +20,9 @@ function App() {
       <Switch>
         <Route exact path='/login' component={Login} />
         <PrivateRoute exact path='/friendslist' component={FriendsList} />
-        <Route component={Login} />
+        <Route render={() => {
+          return <img src="https://http.cat/404" />;
+        }} />
       </Switch>
     </div>
   );

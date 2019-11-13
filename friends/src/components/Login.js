@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import api from '../utils/api';
 
+//i<3Lambd4
 
 function Login(props) {
     const [error, setError] = useState()
@@ -21,10 +22,11 @@ function Login(props) {
         e.preventDefault()
 
         api()
-            .post('http://localhost:5000/api/login', data)
+            .post('/api/login', data)
             .then(res => {
                 // console.log(res.data)
                 localStorage.setItem('payload', res.data.payload)
+                props.history.push('/myfriends')
             })
             .catch(err => {
                 console.log(err)

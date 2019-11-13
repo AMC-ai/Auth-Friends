@@ -21,7 +21,7 @@ const AddFriendForm = (props) => {
         console.log(addFriend)
         axios.post('/api/friends', addFriend)
             .then(res => {
-                console.log(e.persist())
+                console.log(res)
                 setAddFriend({
                     ...addFriend,
                     name: '',
